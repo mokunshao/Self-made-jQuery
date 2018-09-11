@@ -19,7 +19,7 @@
 window.jQuery=function(selectorOrNode){
     let nodes={}        
     if(typeof selectorOrNode==='string'){
-        let temp = document.getElementsByTagName(selectorOrNode)
+        let temp = document.querySelectorAll(selectorOrNode)
         for (let i = 0; i < temp.length; i++) {
         nodes[i]=temp[i]
         nodes.length=i+1
